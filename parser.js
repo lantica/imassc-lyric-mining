@@ -56,11 +56,6 @@
             }),
             await currentPage.waitForNavigation({ waitUntil: 'networkidle0' })
         ]);
-        await currentPage.screenshot({
-            path: "./screenshot.jpg",
-            type: "jpeg",
-            fullPage: true
-        });
         const bdys = await currentPage.$$("div.bdy")
 
         if (bdys.length > 0) {
