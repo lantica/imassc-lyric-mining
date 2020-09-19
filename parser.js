@@ -86,12 +86,12 @@
                 return lyrics;
             } else {
                 page.idle = true;
-                throw new Error('No result found');
+                throw new Error(`No result found for ${name}`);
             }
         }
         else {
             page.idle = true;
-            throw new Error('No result found');
+            throw new Error(`No result found for ${name}`);
         }
 
     };
